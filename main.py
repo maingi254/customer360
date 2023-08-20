@@ -27,6 +27,7 @@ car_loan_account=list(car_loans_account.find({},{"_id":0}))
 df=pd.DataFrame(car_loan_account)
 print(df.head())
 df2=ps.from_pandas(df)
+df.isna().sum()
 print(df2.head(6))
 
 #print(df.columns)
